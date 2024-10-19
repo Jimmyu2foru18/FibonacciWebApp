@@ -1,0 +1,20 @@
+﻿
+<div>
+    <h2>Fibonacci Sequence Generator</h2>
+    <form method="post">
+        <label for="number">Enter the number of Fibonacci numbers to generate:</label>
+        <input type="number" id="number" name="number" min="0" required />
+        <button type="submit">Generate</button>
+    </form>
+
+    @if (ViewBag.FibonacciSequence != null)
+    {
+        <h3>Fibonacci Sequence:</h3>
+        <ul>
+            @foreach (var number in ViewBag.FibonacciSequence)
+            {
+                <li>@number</li>
+            }
+        </ul>
+    }
+</div>

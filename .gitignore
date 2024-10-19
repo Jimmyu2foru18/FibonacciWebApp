@@ -1,0 +1,9 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.vscode/
+
+# Build results
+bin/
+obj/
